@@ -1,12 +1,6 @@
 import './input.css';
-import content from './content';
+import { navbar } from './content';
+import { main } from './content';
 
-
-
-function component() {
-  const element = document.createElement('div');
-  element.textContent = content("Home");
-  return element;
-}
-
-document.body.appendChild(component());
+document.body.appendChild(navbar());
+document.body.appendChild(main());
