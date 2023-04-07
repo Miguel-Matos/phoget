@@ -21,6 +21,18 @@ const navbar = () => {
   return nav;
 }
 
+const foot = () => {
+  const foot = document.createElement('footer');
+  const address = document.createElement('a');
+  address.href = "https://www.linkedin.com/in/miguelmatosjp/"
+  address.textContent = "Miguel Matos";
+  const p = document.createElement('p');
+  p.textContent = "Created by ";
+  foot.appendChild(p);
+  foot.appendChild(address);
+  return foot;
+}
+
 const main = (page, cnt) => {
   const main = document.createElement('main');
   main.classList.add('main');
@@ -31,8 +43,8 @@ const main = (page, cnt) => {
   const intro = document.createElement('h2');
   intro.classList.add('intro');
   intro.textContent = page;
-  const info = document.createElement('p');
-  info.textContent = cnt;
+  const info = cnt;
+  // info.textContent = cnt;
 
   content.appendChild(intro);
   content.appendChild(info);
@@ -41,4 +53,4 @@ const main = (page, cnt) => {
   return main;
 };
 
-export {navbar, main};
+export {navbar, main, foot};
