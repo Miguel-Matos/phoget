@@ -1,4 +1,4 @@
-const navbar = () => {
+const navbar = (() => {
   const nav = document.createElement('nav');
   const home = document.createElement('a');
   home.href = "#";
@@ -18,8 +18,8 @@ const navbar = () => {
 
   nav.classList.add('navbar');
 
-  return nav;
-}
+  return { nav, menu };
+})();
 
 const foot = () => {
   const foot = document.createElement('footer');
