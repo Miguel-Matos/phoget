@@ -21,15 +21,23 @@ const navbar = () => {
   return nav;
 }
 
-const main = (page) => {
+const main = (page, cnt) => {
   const main = document.createElement('main');
   main.classList.add('main');
   const phoget = document.createElement('h1');
   phoget.textContent = "Phoget";
+  const content = document.createElement('div');
+  content.classList.add('content');
   const intro = document.createElement('h2');
+  intro.classList.add('intro');
   intro.textContent = page;
+  const info = document.createElement('p');
+  info.textContent = cnt;
+
+  content.appendChild(intro);
+  content.appendChild(info);
   main.appendChild(phoget);
-  main.appendChild(intro);
+  main.appendChild(content);
   return main;
 };
 

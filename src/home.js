@@ -1,7 +1,7 @@
-const home = () => {
-  const intro = "Welcome to Phoget!";
+const home = (() => {
+  const title = "Home";
+  const about = "Your go-to place for Vietnamese food";
+  return {title, about};
+})();
 
-  return intro;
-}
-
-export default home;
+export {home}; 
