@@ -102,3 +102,12 @@ footer {
   margin-bottom: 50px;
   gap: 4px;
 }
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

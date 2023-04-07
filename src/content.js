@@ -26,6 +26,7 @@ const foot = () => {
   const address = document.createElement('a');
   address.href = "https://www.linkedin.com/in/miguelmatosjp/"
   address.textContent = "Miguel Matos";
+  address.setAttribute('target', '_blank');
   const p = document.createElement('p');
   p.textContent = "Created by ";
   foot.appendChild(p);
