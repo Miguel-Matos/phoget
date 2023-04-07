@@ -1,8 +1,5 @@
 const navbar = () => {
   const nav = document.createElement('nav');
-  const phoget = document.createElement('h1');
-  phoget.textContent = "Phoget";
-
   const home = document.createElement('a');
   home.href = "#";
   home.textContent = "Home";
@@ -15,7 +12,6 @@ const navbar = () => {
   contact.href = "#";
   contact.textContent = "Contact";
 
-  nav.appendChild(phoget);
   nav.appendChild(home);
   nav.appendChild(menu);
   nav.appendChild(contact);
@@ -25,12 +21,16 @@ const navbar = () => {
   return nav;
 }
 
-const main = () => {
+const main = (page) => {
   const main = document.createElement('main');
+  main.classList.add('main');
+  const phoget = document.createElement('h1');
+  phoget.textContent = "Phoget";
   const intro = document.createElement('h2');
-  intro.textContent = "Welcome!";
+  intro.textContent = page;
+  main.appendChild(phoget);
   main.appendChild(intro);
   return main;
-}
+};
 
 export {navbar, main};

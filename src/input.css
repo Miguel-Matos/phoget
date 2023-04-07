@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'title';
+  src: url("./fonts/Humble-9Y117.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,20 +11,33 @@
 .navbar {
   background-color: rgb(207, 221, 233);
   display: flex;
+  justify-content: center;
   padding: 10px;
   align-items: center;
   font-family: sans-serif;
   box-shadow: 0 0 10px;
+  margin-bottom: 50px;
+  gap: 25px;
 }
 
-.navbar h1 {
+.main h1 {
   flex: 3;
+  font-family: 'title';
+  font-size: 5rem;
+  text-align: center;
 }
 
 .navbar a {
-  flex: 1;
+  /* flex: 1; */
   text-decoration: none;
   color: black;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  background-color: rgb(185, 198, 210);
+  border-radius: 15%;
 }
 
 body {
