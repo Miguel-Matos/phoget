@@ -7,11 +7,19 @@ import { menu } from './menu';
 
 document.body.appendChild(navbar.nav);
 
-const content = (() => {
-  navbar.menu.addEventListener('click', () => {
-    console.log('yes');
-  });
-})();
+const homepage = main(home.title, home.about);
+const menupage = main(menu.title, menu.about);
+const footer = foot();
+document.body.appendChild(homepage);
 
-document.body.appendChild(main(home.title, home.about));
-document.body.appendChild(foot());
+
+  navbar.menu.addEventListener('click', () => {
+    document.body.removeChild(homepage);
+    document.body.removeChild(footer);
+    document.body.appendChild(menupage);
+    document.body.appendChild(footer);
+  });
+
+
+
+document.body.appendChild(footer);
