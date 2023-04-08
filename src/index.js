@@ -5,19 +5,21 @@ import { foot } from './content';
 import { home } from './home';
 import { menu } from './menu';
 
+const core = document.createElement('div');
 
-const navbar = navbar.nav;
+const navArea = navbar.nav;
 const homepage = main(home.title, home.about);
 const menupage = main(menu.title, menu.about);
 const footer = foot();
 
-document.body.appendChild(navbar);
-document.body.appendChild(homepage);
+document.body.appendChild(navArea);
+document.body.appendChild(core);
+core.appendChild(homepage);
 
 
   navbar.menu.addEventListener('click', () => {
-    document.body.removeChild(homepage);
-    menupage.insertAdjacentElement('afterbegin', navbar);
+    core.removeChild(homepage);
+    core.appendChild(menupage);
   });
 
 
