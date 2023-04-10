@@ -18,7 +18,7 @@ const navbar = (() => {
 
   nav.classList.add('navbar');
 
-  return { nav, menu };
+  return { nav, menu, home, contact };
 })();
 
 const foot = () => {

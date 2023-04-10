@@ -35,16 +35,22 @@
   padding: 20px 0;
   box-shadow: 0 5px 15px;
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 40px 15px;
 
   margin-bottom: 150px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-top: 25px;
 }
 
 .content div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
+  line-height: 28px;
 }
 
 .main {
@@ -60,7 +66,7 @@
 .main h1 {
   flex: 3;
   font-family: 'title';
-  font-size: 5rem;
+  font-size: 6rem;
   margin-bottom: 50px;
   padding-top: 50px;
 }
@@ -104,11 +110,26 @@ footer {
   gap: 4px;
 }
 
-footer a {
+footer a, #link {
   text-decoration: none;
   color: black;
 }
 
-footer a:hover {
+footer a:hover, #link {
   text-decoration: underline;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 25px;
+}
+
+.cost {
+  font-style: italic;
+  font-size: larger;
+  margin-top: 15px;
+}
+
+.description {
+  max-width: 70%;
 }
