@@ -1,3 +1,5 @@
+import emimg from '../src/img/em.jpg';
+
 const contact = (() => {
   const title = "Contact";
   const about = document.createElement('div');
@@ -8,7 +10,7 @@ const contact = (() => {
   em.innerHTML = "Inspired by the love of my life, Em.";
 
   const img = document.createElement('img');
-  img.src = '../src/img/em.jpg';
+  img.src = emimg;
   img.classList.add('img');
 
   const website = document.createElement('a');

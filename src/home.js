@@ -1,4 +1,4 @@
-import background2 from '../src/img/background2.jpg'
+import background2 from '../src/img/background2.jpg';
 
 const home = (() => {
   const title = "Home";
