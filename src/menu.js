@@ -24,13 +24,13 @@ const menu = (() => {
     }
   };
 
-  const bahnmi = item("Bahn Mi", "699", "Vietnamese people consume 23 daily. Fresh roasted bread with garden grown vegetables and meat of your choosing.", "../src/img/bahnmi.jpg");
+  const bahnmi = item("Bahn Mi", "699", "Vietnamese people consume 23 daily. Fresh roasted bread with garden grown vegetables and meat of your choosing.", "/../src/img/bahnmi.jpg");
   adding(bahnmi.foodName, bahnmi.cost, bahnmi.description, bahnmi.image);
 
-  const pho = item("Pho", "799", "The signature dish of our restaurant. Guaranteed to keep you full all day. No other explanation needed.", "../src/img/pho.jpg");
+  const pho = item("Pho", "799", "The signature dish of our restaurant. Guaranteed to keep you full all day. No other explanation needed.", "/../src/img/pho.jpg");
   adding(pho.foodName, pho.cost, pho.description, pho.image);
 
-  const rolls = item("Spring Rolls", "399", "A special blend of seafood and vegetables, guaranteed to keep you coming back for more!", "../src/img/springroll.jpg");
+  const rolls = item("Spring Rolls", "399", "A special blend of seafood and vegetables, guaranteed to keep you coming back for more!", "/../src/img/springroll.jpg");
   adding(rolls.foodName, rolls.cost, rolls.description, rolls.image);
 
   return {title, about};
