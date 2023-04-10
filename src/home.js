@@ -7,7 +7,7 @@ const home = (() => {
   p2.classList.add('description');
   p2.textContent = "Founded in 2023 in Kobe, Japan, this is the first Vietnamese delivery restaurant. All you have to do is order from the menu, add we will deliver it to you!";
   const img = document.createElement('img');
-  img.src = "/../src/img/background2.jpg";
+  img.src = "/src/img/background2.jpg";
   img.classList.add('img');
 
   about.appendChild(p1);
